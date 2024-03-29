@@ -5,7 +5,12 @@
   font-family: var(--font-primary);
 }
 
+body {
+  background-color: var(--bg-body);
+}
+
 :root {
-  --bg-primary: ;
+  --bg-orange: #ff4d00;
+  --bg-body: #1a1c20;
   --font-primary: 'Montserrat', sans-serif;
 }
