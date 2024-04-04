@@ -13,5 +13,7 @@ body {
   --bg-orange: #ff4d00;
   --bg-dark: #111111;
   --bg-body: #1a1c20;
+  --bg-text: #9BA0AC;
+  --bg-title: #E5E5E5; 
   --font-primary: 'Montserrat', sans-serif;
 }

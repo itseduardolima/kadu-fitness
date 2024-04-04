@@ -3,12 +3,12 @@ import IntroImage from "../../assets/images/bg-01.jpg";
 
 export const StyledBanner = styled.div`
   width: 100%;
-  height: 70vh;
+  height: 60vh;
   background-image: url(${IntroImage});
   background-size: cover;
   background-position: center;
 
-  @media (min-width: 769px) {
+  @media (min-width: 998px) {
     height: 100vh;
   }
 `;
@@ -23,7 +23,7 @@ export const Description = styled.div`
   flex-direction: column;
 
   @media (max-width: 820px) {
-    top: 35%;
+    top: 30%;
     left: 50%;
     width: 90%;
   }
@@ -32,7 +32,7 @@ export const Description = styled.div`
     width: 60%;
     font-weight: bold;
     font-size: 2.5rem;
-    color: white;
+    color: var(--bg-title);
   }
 
   > p {
