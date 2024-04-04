@@ -1,3 +1,4 @@
+import { Classes } from "./components/Classes";
 import Header from "./components/Header";
 import { Intro } from "./components/Intro";
 
@@ -6,6 +7,7 @@ function App() {
     <>
       <Header />
       <Intro />
+      <Classes />
     </>
   );
 }
