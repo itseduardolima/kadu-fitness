@@ -5,7 +5,7 @@ export const Intro = () => {
     <section>
       <StyledBanner />
       <Description className="description">
-        <h1>TRABALHAR DURO. SENTIR-SE ORGULHOSO.</h1>
+        <h1>TRABALHAR DURO. <br /> SENTIR-SE ORGULHOSO.</h1>
         <p>
           Junte-se hoje ao Kadu Fitness para melhorar seu bem-estar e
           transformar seu corpo e mente por meio de treinos guiados.

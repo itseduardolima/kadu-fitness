@@ -19,6 +19,7 @@ export const StyledNavbar = styled(Navbar)`
 
 export const StyledNav = styled(Nav)`
   padding-top: 1rem;
+  gap: 10px;
 
   @media (min-width: 991px) {
     padding-top: 0;
@@ -40,7 +41,8 @@ export const StyledBrand = styled.a`
   }
 `;
 
-export const StyledLink = styled(Nav.Link)`
+export const StyledLink = styled.a`
+  text-decoration: none;
   font-size: 16px;
   color: white;
   border-bottom: 2px solid transparent;

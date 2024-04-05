@@ -3,7 +3,8 @@ import IntroImage from "../../assets/images/bg-01.jpg";
 
 export const StyledBanner = styled.div`
   width: 100%;
-  height: 60vh;
+  height: 70vh;
+  filter: grayscale(70%);
   background-image: url(${IntroImage});
   background-size: cover;
   background-position: center;
@@ -23,7 +24,7 @@ export const Description = styled.div`
   flex-direction: column;
 
   @media (max-width: 820px) {
-    top: 30%;
+    top: 40%;
     left: 50%;
     width: 90%;
   }
@@ -59,13 +60,13 @@ export const Description = styled.div`
 
   @media (max-width: 768px) {
     > h1 {
-      width: 80%;
-      font-size: 1.5rem;
+      width: 100%;
+      font-size: 2rem;
     }
 
     > p {
       width: 80%;
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
     > a {
       width: 50%;

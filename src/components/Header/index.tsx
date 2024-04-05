@@ -39,7 +39,7 @@ const Header = () => {
       />
 
       <Navbar.Collapse id="basic-navbar-nav">
-        <StyledNav className="ml-auto">
+        <StyledNav >
           <StyledLink href="#about">Sobre</StyledLink>
           <StyledLink href="#classes">Aulas</StyledLink>
           <StyledLink href="#team">Time</StyledLink>
