@@ -19,7 +19,7 @@ export const StyledNavbar = styled(Navbar)`
 
 export const StyledNav = styled(Nav)`
   padding-top: 1rem;
-  gap: 10px;
+  gap: 5px;
 
   @media (min-width: 991px) {
     padding-top: 0;
@@ -37,7 +37,7 @@ export const StyledBrand = styled.a`
   }
 
   @media (min-width: 991px) {
-    margin-right: 65%;
+    margin-right: 60%;
   }
 `;
 
