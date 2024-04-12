@@ -5,6 +5,7 @@ export const TextContainer = styled.div`
   padding: 10px;
   flex-direction: column;
   margin: auto;
+  gap: 10px;
 
   @media (min-width: 768px) {
     width: 50%;
@@ -16,7 +17,7 @@ export const Title = styled.h2`
   color: var(--bg-title);
 
   @media (min-width: 768px) {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 `;
 
