@@ -12,7 +12,7 @@ const GalleryContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(1, minmax(250px, 1fr));
   gap: 10px;
-  padding: 0 10px;
+  padding: 0 15px;
 
   @media (min-width: 768px) {
     
