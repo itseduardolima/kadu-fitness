@@ -1,4 +1,5 @@
 import { Classes } from "./components/Classes";
+import Footer from "./components/Footer";
 import { Gallery } from "./components/Gallery";
 import Header from "./components/Header";
 import { Intro } from "./components/Intro";
@@ -12,6 +13,7 @@ function App() {
       <Classes />
       <Team />
       <Gallery />
+      <Footer />
     </>
   );
 }
