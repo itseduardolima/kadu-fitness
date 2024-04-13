@@ -19,11 +19,7 @@ export const Container = styled.div`
 
 export const Card = styled.div`
   max-width: 24.375rem;
-  min-height: 100%;
-  margin: 0 auto;
-  position: relative;
   border-radius: 10px;
-  z-index: 0;
   box-shadow: -5px -5px 10px rgba(17, 17, 17, 0.5),
     5px 5px 10px rgba(204, 204, 204, 0.1);
   overflow: hidden;
