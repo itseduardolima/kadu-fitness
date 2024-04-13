@@ -14,6 +14,11 @@ const GalleryContainer = styled.div`
   gap: 10px;
   padding: 0 10px;
 
+  @media (min-width: 768px) {
+    
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+
   @media (min-width: 998px) {
     padding: 0 10rem;
     grid-template-columns: repeat(3, minmax(250px, 1fr));
@@ -30,7 +35,7 @@ const GalleryImage = styled.img`
     transform: scale(1.05);
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 998px) {
     width: 100%;
   }
 `;
