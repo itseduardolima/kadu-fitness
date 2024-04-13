@@ -1,10 +1,18 @@
+import { useRef } from "react";
 import { Container } from "../../styles/Container";
 import { Text, TextContainer, Title } from "../../styles/Description";
 import GridContainer from "../Grid";
 
-export const Classes = () => {
+type ClassesProps = {
+  id?: string;
+};
+
+export const Classes: React.FC<ClassesProps> = ({ id }) => {
+
+  const ref = useRef(null);
+
   return (
-    <Container>
+    <Container id={id} ref={ref}>
       <TextContainer>
         <Title>Nossas aulas</Title>
         <Text>

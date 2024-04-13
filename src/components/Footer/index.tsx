@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import {
   FooterColumn,
   FooterContact,
@@ -8,13 +9,21 @@ import {
   SocialMedia,
 } from "./styled";
 
-const Footer = () => {
+type ContactProps = {
+  id?: string;
+};
+
+const Footer: React.FC<ContactProps> = ({ id }) => {
+  const ref = useRef(null);
+
   return (
-    <FooterContainer>
+    <FooterContainer id={id} ref={ref}>
       <FooterGrid>
         <FooterColumn>
           <FooterTitle>Saiba mais sobre nós</FooterTitle>
-          <p>Obtenha seu orçamento <br /> ou ligue: +1 (800) 756-32-56</p>
+          <p>
+            Obtenha seu orçamento <br /> ou ligue: +1 (800) 756-32-56
+          </p>
           <a href="#">Agendar uma aula</a>
         </FooterColumn>
         <FooterColumn>

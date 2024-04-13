@@ -1,3 +1,4 @@
+import { About } from "./components/About";
 import { Classes } from "./components/Classes";
 import Footer from "./components/Footer";
 import { Gallery } from "./components/Gallery";
@@ -10,10 +11,11 @@ function App() {
     <>
       <Header />
       <Intro />
-      <Classes />
-      <Team />
-      <Gallery />
-      <Footer />
+      <About id="about" />
+      <Classes id="classes" />
+      <Team id="team" />
+      <Gallery id="gallery" />
+      <Footer id="contact" />
     </>
   );
 }

@@ -1,48 +1,23 @@
 import { Container } from "../../styles/Container";
 import { Text, TextContainer, Title } from "../../styles/Description";
-import styled from "styled-components";
 
 import photo1 from "../../assets/images/gallery-01-390x620.jpg";
 import photo2 from "../../assets/images/gallery-02-390x500.jpg";
 import photo3 from "../../assets/images/gallery-03-390x500.jpg";
 import photo4 from "../../assets/images/gallery-04-390x400.jpg";
 import photo5 from "../../assets/images/gallery-05-830x520.jpg";
+import { GalleryContainer, GalleryImage } from "./styled";
+import { useRef } from "react";
 
-const GalleryContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(1, minmax(250px, 1fr));
-  gap: 10px;
-  padding: 0 15px;
+type GalleryProps = {
+  id?: string;
+};
 
-  @media (min-width: 768px) {
-    
-    grid-template-columns: repeat(2, minmax(250px, 1fr));
-  }
+export const Gallery: React.FC<GalleryProps> = ({ id }) => {
+  const ref = useRef(null);
 
-  @media (min-width: 998px) {
-    padding: 0 10rem;
-    grid-template-columns: repeat(3, minmax(250px, 1fr));
-  }
-`;
-
-const GalleryImage = styled.img`
-  cursor: pointer;
-  border-radius: 8px;
-  display: inline-block;
-  transition: transform 0.3s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-  }
-
-  @media (max-width: 998px) {
-    width: 100%;
-  }
-`;
-
-export const Gallery = () => {
   return (
-    <Container>
+    <Container id={id} ref={ref}>
       <TextContainer>
         <Title>Nossa galeria</Title>
         <Text>
